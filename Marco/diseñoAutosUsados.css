@@ -1,0 +1,44 @@
+.contenedor {
+    background-color: #dc1a1a;
+    border: black solid 3px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px red,
+                -20px -20px 60px black;
+}
+
+.caja {
+    background-color: black;
+    box-shadow: 5px 5px 5px white;
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    align-content: center;
+    text-decoration: blue;
+}
+
+.organizador {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1300px) {
+    .organizador {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .organizador {
+    grid-template-columns: 1fr;
+    }
+}
+
+.tamaño {
+    width: 210px;
+}

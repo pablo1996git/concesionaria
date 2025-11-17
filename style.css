@@ -1,0 +1,154 @@
+/* Valenti */
+.card {
+  position: relative;
+  width: 300px;
+  height: 410px;
+  /* background-color: #f2f2f2; */
+  background-image: url(https://images.unsplash.com/photo-1571335746824-742511d49bce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV1bSVDMyVBMXRpY29zJTIwZGUlMjBjb2NoZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500);
+  background-size: contain;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 300px;
+  box-shadow: 0px 0px 40px 40px rgb(0, 0, 0);
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin-top: -10px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover img {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.autos-0km {
+  /* margin: 5px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section h1,
+h2,
+h3 {
+  font-family: "Momo Trust Display", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 1px rgb(203, 35, 35);
+}
+
+.cuadro button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #dc1a1a;
+  color: rgb(0, 0, 0);
+}
+
+.cuadro button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.cuadro button::before,
+.cuadro button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cuadro button::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cuadro button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cuadro,
+.cuotas {
+  border-radius: 15px;
+  /* border: 1px solid #dc1a1a; */
+  padding: 10px;
+  background-color: #dc1a1a;
+  color: white;
+}
+
+.cuotas label {
+  border: 1px dashed black;
+  padding: 2px;
+  border: 10px;
+  transition: 1s;
+}
+
+.cuotas label:hover {
+  transform: scale(1.2);
+}
+
+.btn-danger {
+  margin-top: 8px;
+  background-color: #dc1a1a;
+}

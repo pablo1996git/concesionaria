@@ -1,0 +1,43 @@
+.container {
+    background: rgb(224, 76, 76);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 650px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    background: rgb(224, 76, 76);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 650px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.resultado {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.colum{
+    columns: 2;
+    margin-bottom: 1px;
+    text-align: center;
+}

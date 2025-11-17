@@ -1,0 +1,51 @@
+.titulo {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* conserva las propiedades del hijo*/
+  align-items: center; /* aliniacion vertical */
+  justify-content: space-evenly;
+}
+
+.imgen {
+  width: 250px;
+  height: 120px;
+  /* margin-top: 0;
+    margin-bottom: 0; */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.descripcion {
+  columns: 2;
+  margin-bottom: 1px;
+}
+
+.tarjeta {
+  border: solid black 2px;
+  background-color: rgb(184, 45, 45);
+  color: white;
+  /* text-align: center; */
+  font-family: cursive;
+  box-shadow: 2px 2px black;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* font-size: small; */
+  width: 330px;
+  height: 430px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .imagenes {
+    flex-direction: column;
+  }
+}
